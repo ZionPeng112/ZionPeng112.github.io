@@ -6,7 +6,6 @@ menu:
   Internship: /internship/ || fa fa-briefcase
   blog: /blog/ || fa fa-book
   categories: /categories/ || fa fa-folder
-  archives: /archives/ || fa fa-archive
 
 sidebar:
   position: left
