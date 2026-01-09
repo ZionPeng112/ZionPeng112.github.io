@@ -84,6 +84,6 @@ layout: page
     <a href="/about/">Learn More About Me</a>
     <a href="/internship/">View My Internships</a>
     <a href="/blog/">Read My Blog</a>
-    <a href="/archives/">Browse Archives</a>
+    <a href="/categories/">Browse Categories</a>
   </div>
 </div>
