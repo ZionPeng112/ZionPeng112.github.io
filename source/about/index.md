@@ -4,11 +4,16 @@ date: 2025-01-01 00:00:00
 ---
 
 <style>
+/* Hide the page title at the top */
+.post-header {
+  display: none;
+}
 .about-header {
   display: flex;
   align-items: flex-start;
   gap: 30px;
   margin-bottom: 10px;
+  margin-top: 0;
 }
 .about-header h2 {
   margin: 0;
