@@ -26,6 +26,11 @@ date: 2025-01-01 00:00:00
     display: block;
   }
 }
+.education-section {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #ddd;
+}
 .education-item {
   margin-bottom: 25px;
   padding-bottom: 20px;
@@ -65,9 +70,8 @@ date: 2025-01-01 00:00:00
   text-decoration: underline;
 }
 .papers-section {
-  margin-top: 40px;
-  padding-top: 30px;
-  border-top: 2px solid #ddd;
+  margin-top: 0;
+  padding-top: 0;
 }
 .paper-link {
   margin-left: 8px;
@@ -86,6 +90,7 @@ date: 2025-01-01 00:00:00
 
 ## Education Background
 
+<div class="education-section">
 <div class="education-item">
   <div class="education-degree">B.Mgt. Information Management and Information System</div>
   <div class="education-university">
@@ -104,6 +109,7 @@ date: 2025-01-01 00:00:00
   <div class="education-supervisor">
     Supervised by <a href="https://www.polyu.edu.hk/ise/people/academic-staff/xiaoge-zhang/" target="_blank">Xiaoge Zhang</a>, Co-supervised by <a href="https://www.polyu.edu.hk/ise/people/academic-staff/nick-sh-chung/" target="_blank">Chung Nick</a>
   </div>
+</div>
 </div>
 
 ## Publications
