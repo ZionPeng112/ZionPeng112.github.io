@@ -2,7 +2,7 @@
 title: Welcome to My Homepage
 date: 2025-01-01 00:00:00
 categories:
-  - Journal
+  - 
 ---
 
 Welcome! This is the first post on my personal homepage.
