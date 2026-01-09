@@ -1,23 +1,37 @@
 <style>
-/* Reduce top spacing for site title */
+/* Hide black logo lines */
+.logo-line {
+  display: none !important;
+}
+
+/* Reduce top spacing for site header */
 .site-header {
   margin-top: 0 !important;
-  padding-top: 10px !important;
+  padding-top: 5px !important;
+  margin-bottom: 10px !important;
 }
 .brand {
   margin-top: 0 !important;
   padding-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.site-meta {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  margin-bottom: 10px !important;
 }
 .site-title {
   background: #f5f5f5 !important;
   color: #333 !important;
   border: 1px solid #e0e0e0 !important;
   padding: 8px 16px !important;
+  margin: 0 !important;
 }
 
 /* Reduce top spacing for all pages */
 .main-inner {
-  padding-top: 20px !important;
+  padding-top: 10px !important;
+  margin-top: 0 !important;
 }
 .post-block {
   margin-top: 0 !important;
