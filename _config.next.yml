@@ -27,5 +27,4 @@ busuanzi_count:
 
 custom_file_path:
   head: source/_data/custom_head.swig
-  sidebar: source/_data/custom_sidebar.swig
   bodyEnd: source/_data/custom_body_end.swig
