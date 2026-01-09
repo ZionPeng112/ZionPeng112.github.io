@@ -70,20 +70,15 @@ date: 2025-01-01 00:00:00
   border-top: 2px solid #ddd;
 }
 .paper-link {
-  display: inline-block;
-  margin-left: 10px;
-  padding: 4px 12px;
-  background: #f0f0f0;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  margin-left: 8px;
   text-decoration: none;
-  color: #333;
-  font-size: 0.9em;
-  transition: background 0.3s;
+  color: #c65353;
+  font-weight: bold;
+  font-size: 1em;
 }
 .paper-link:hover {
-  background: #e0e0e0;
-  border-color: #bbb;
+  color: #a04040;
+  text-decoration: underline;
 }
 </style>
 
