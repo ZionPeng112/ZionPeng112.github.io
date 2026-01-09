@@ -10,12 +10,19 @@ date: 2025-01-01 00:00:00
 }
 /* Reduce top spacing */
 .post-block {
-  margin-top: 0;
-  padding-top: 0;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 .post-body {
-  margin-top: 0;
-  padding-top: 0;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+.main-inner {
+  padding-top: 0 !important;
+}
+.post {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 .about-header {
   display: flex;
