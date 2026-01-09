@@ -1,6 +1,7 @@
 ---
 title: About Me
 date: 2025-01-01 00:00:00
+toc: true
 ---
 
 <style>

@@ -1,6 +1,7 @@
 ---
 title: Home
 layout: page
+toc: true
 ---
 
 <style>
