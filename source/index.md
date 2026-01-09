@@ -60,7 +60,7 @@ layout: page
 <div class="home-intro">
   <img src="/images/photo_home.jpg" alt="Zion Peng" class="home-photo">
 
-  <h1>Hi, I'm Zion Peng</h1>
+  <h1>Hi, I'm Zion Peng 😊</h1>
 
   <p>I am a scholar passionate about implementing effective, high-reliability machine learning methods to address real-world problems.</p>
 
