@@ -5,9 +5,9 @@ date: 2025-01-01 00:00:00
 
 ## About Me
 
-Hi, I’m Zion Peng, a scholar who enjoys applying effective and reliable machine-learning method to real world challenges.
+Hi, I’m Zion Peng. I am a scholar passionate about implementing effective, high-reliability machine learning methods to address real-world problems. 
 
-I created this homepage to share what I’m working on, what I’m learning, and a few milestones I have achieved.
+Welcome to my homepage, where I share my latest projects, academic growth, and key milestones.
 
 ## What I Do
 
