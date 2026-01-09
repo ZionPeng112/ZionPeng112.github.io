@@ -5,25 +5,31 @@ date: 2025-01-01 00:00:00
 
 <style>
 .about-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
   margin-bottom: 30px;
-  overflow: hidden;
+}
+.about-header h2 {
+  margin: 0;
+  flex: 1;
 }
 .about-header-image {
-  float: right;
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  margin: 0 0 20px 30px;
+  flex-shrink: 0;
 }
 @media (max-width: 768px) {
+  .about-header {
+    flex-direction: column;
+    align-items: center;
+  }
   .about-header-image {
-    float: none;
-    width: 150px;
-    height: 150px;
-    margin: 0 auto 20px;
-    display: block;
+    width: 120px;
+    height: 120px;
   }
 }
 .education-section {
