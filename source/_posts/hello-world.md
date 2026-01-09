@@ -14,7 +14,7 @@ I'm **Zion Peng**, a researcher passionate about implementing effective, high-re
 This homepage serves as a central place where I share:
 
 - **Research updates**: My latest academic work, publications, and research progress
-- **Internship experiences**: Projects and learnings from my internships at FWD Group, Guangdong Zhongshi Information Technology, and Guangzhou Jiadu Zhitong Technology
+- **Internship experiences**: Projects and learnings from my internships at FWD Group, Guangzhou Jiadu Zhitong Technology and so on.
 - **Academic journey**: Notes on machine learning, data science, and industrial AI applications
 - **Personal growth**: Reflections on research, learning, and professional development
 
