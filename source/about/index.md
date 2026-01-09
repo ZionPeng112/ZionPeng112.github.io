@@ -11,9 +11,9 @@ Welcome to my homepage, where I share my latest projects, academic growth, and k
 
 ## What I Do
 
-- **Web development**: Building modern, responsive websites and web apps.
-- **Learning & writing**: Taking notes on what I learn and turning them into articles.
-- **Side projects**: Experimenting with small tools, automations, and UI ideas.
+- **Machine Learning & Research**: Developing robust, data-driven solutions with a focus on efficient and scalable ML methodologies.
+- **Academic Writing & Knowledge Sharing**: Synthesizing complex technical concepts into structured notes and scholarly articles.
+- **Minimalist Tooling**: Engineering streamlined Python scripts, automations, and side projects designed for maximum impact with minimal overhead.
 
 ## Beyond Code
 
