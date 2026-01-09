@@ -98,6 +98,5 @@ date: 2025-01-01 00:00:00
 ## Publications
 
 <div class="papers-section">
-  <p><em>Publications will be listed here.</em></p>
-  <!-- Add your papers here -->
+  <p>Peng, Q., & Li, D. (2025). AdaptiveWatermark: Dynamic Watermarking for Large Language Models with Agent. In <em>Proceedings of the IEEE International Conference on Trust, Security and Privacy in Computing and Communications (IEEE TrustCom 2025)</em>. Guangzhou, China: IEEE. (Accepted)</p>
 </div>
