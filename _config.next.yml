@@ -1,0 +1,27 @@
+scheme: Muse
+
+menu:
+  home: / || fa fa-home
+  about: /about/ || fa fa-user
+  projects: /projects/ || fa fa-code
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-folder
+  archives: /archives/ || fa fa-archive
+
+sidebar:
+  position: left
+  display: post
+
+avatar:
+  url: /images/avatar.png
+  rounded: true
+
+social:
+  GitHub: https://github.com/YOUR_USERNAME || fab fa-github
+  Email: mailto:your@email.com || fa fa-envelope
+
+busuanzi_count:
+  enable: true
+  total_visitors: true
+  total_views: true
+
