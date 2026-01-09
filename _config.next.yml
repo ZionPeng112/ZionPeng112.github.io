@@ -4,6 +4,7 @@ menu:
   home: / || fa fa-home
   about: /about/ || fa fa-user
   projects: /projects/ || fa fa-code
+  blog: /blog/ || fa fa-book
   categories: /categories/ || fa fa-folder
   archives: /archives/ || fa fa-archive
 
