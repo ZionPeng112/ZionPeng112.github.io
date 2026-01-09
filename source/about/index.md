@@ -17,7 +17,7 @@ Welcome to my homepage, where I share my latest projects, academic growth, and k
 
 ## Beyond Code
 
-Outside of tech, I enjoy reading, exploring new ideas, and improving how I think and work.
+Outside of tech, I enjoy traveling and exploring new cultures worldwide. I value time spent to 'clear my mind', as it allows me to recalibrate my perspective and refine how I think and work.
 
 This site is a simple place to collect all of that in one home.
 
