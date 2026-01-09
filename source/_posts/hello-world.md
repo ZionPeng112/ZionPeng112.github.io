@@ -1,9 +1,6 @@
 ---
 title: Welcome to My Homepage
 date: 2025-01-01 00:00:00
-tags:
-  - introduction
-  - personal
 categories:
   - Journal
 ---

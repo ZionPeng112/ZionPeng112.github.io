@@ -1,23 +1,21 @@
 <style>
+/* Home page header image - floats to right, doesn't block content */
 .home-header-image {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 200px;
-  height: 200px;
+  float: right;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  z-index: 10;
+  margin: 0 0 15px 20px;
 }
+
 @media (max-width: 768px) {
   .home-header-image {
-    position: relative;
-    top: 0;
-    right: 0;
-    width: 150px;
-    height: 150px;
-    margin: 0 auto 20px;
+    float: none;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px;
     display: block;
   }
 }
