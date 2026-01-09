@@ -8,7 +8,7 @@ date: 2025-01-01 00:00:00
   display: flex;
   align-items: flex-start;
   gap: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .about-header h2 {
   margin: 0;
