@@ -50,10 +50,22 @@ highlight:
   tab_replace: ''
   wrap: true
   hljs: false
+  exclude_languages:
+    - mermaid
 prismjs:
   preprocess: true
   line_number: true
   tab_replace: ''
+
+# Kramed renderer config for math support
+kramed:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')

@@ -5,9 +5,25 @@ categories:
   - News
 ---
 
-Welcome! This is the first post on my personal homepage.
+<style>
+.welcome-banner {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px 25px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  color: #fff;
+}
+.welcome-banner strong {
+  color: #fff;
+}
+.welcome-banner em {
+  color: rgba(255,255,255,0.9);
+}
+</style>
 
-I'm **Zion Peng**, a researcher passionate about implementing effective, high-reliability machine learning methods to address real-world problems.
+<div class="welcome-banner">
+<strong>👋 Welcome!</strong> I'm <strong>Zion Peng</strong>, a researcher passionate about implementing effective, high-reliability machine learning methods to address real-world problems. This is my personal academic homepage where I share research updates, technical notes, and professional growth.
+</div>
 
 <!-- more -->
 

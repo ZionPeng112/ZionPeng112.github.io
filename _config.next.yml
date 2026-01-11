@@ -27,3 +27,19 @@ busuanzi_count:
 custom_file_path:
   head: source/_data/custom_head.swig
   bodyEnd: source/_data/custom_body_end.swig
+
+# Math Equations Render Support
+math:
+  every_page: false
+  mathjax:
+    enable: true
+    tags: none  # or 'ams' or 'all'
+  katex:
+    enable: false
+
+# Mermaid Diagrams Support
+mermaid:
+  enable: true
+  theme:
+    light: default
+    dark: dark
