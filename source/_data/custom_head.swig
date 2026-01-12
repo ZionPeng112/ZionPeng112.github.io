@@ -245,16 +245,26 @@ body.sidebar-open .sidebar-overlay {
 }
 
 /* ============================================
-   TABLE OF CONTENTS - HIDDEN
+   TABLE OF CONTENTS - HIDDEN (but keep sidebar content)
    ============================================ */
 .post-toc-wrap,
 .post-toc,
 .toc,
 .toc-wrap,
-.sidebar-panel-container,
 .sidebar-nav,
 #table-of-contents {
   display: none !important;
+}
+
+/* Ensure sidebar panel container is visible */
+.sidebar-panel-container {
+  display: block !important;
+  visibility: visible !important;
+}
+
+.sidebar-panel {
+  display: block !important;
+  visibility: visible !important;
 }
 
 /* ============================================
