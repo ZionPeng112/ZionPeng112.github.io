@@ -9,6 +9,17 @@ toc: true
 .post-title {
   display: none;
 }
+
+/* Ensure proper TOC hierarchy */
+.post-body h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.post-body h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
 /* Reduce top spacing */
 .post-block {
   margin-top: 0 !important;

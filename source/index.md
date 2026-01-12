@@ -109,12 +109,11 @@ toc: false
   <img src="/images/photo_home.jpg" alt="Zion Peng" class="home-photo">
 
   <div class="home-banner">
-    <h1>Hi, I'm Zion Peng 😊</h1>
     <p>I am a scholar passionate about implementing effective, high-reliability machine learning methods to address real-world problems. Welcome to my homepage, where I share my latest projects, academic growth, and key milestones.</p>
   </div>
 
   <div class="home-section">
-    <h2>🔬 What I Do</h2>
+    <h2>What I Do</h2>
     <ul>
       <li><strong>Machine Learning & Research</strong>: Developing robust, data-driven solutions with a focus on efficient and scalable ML methodologies.</li>
       <li><strong>Academic Writing & Knowledge Sharing</strong>: Synthesizing complex technical concepts into structured notes and scholarly articles.</li>
@@ -123,14 +122,14 @@ toc: false
   </div>
 
   <div class="home-section">
-    <h2>🌍 Beyond Code</h2>
+    <h2>Beyond Code</h2>
     <p>Outside of tech, I enjoy traveling and exploring new cultures worldwide. I value time spent to 'clear my mind', as it allows me to recalibrate my perspective and refine how I think and work.</p>
   </div>
 
   <div class="home-links">
-    <a href="/about/">👤 About Me</a>
-    <a href="/internship/">💼 Internships</a>
-    <a href="/blog/">📖 Blog</a>
-    <a href="/categories/">📂 Categories</a>
+    <a href="/about/">About Me</a>
+    <a href="/internship/">Internships</a>
+    <a href="/blog/">Blog</a>
+    <a href="/categories/">Categories</a>
   </div>
 </div>

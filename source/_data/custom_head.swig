@@ -40,29 +40,37 @@ header.header {
 }
 
 /* ============================================
-   SITE TITLE - Clean Modern Style
+   SITE TITLE - Hide or Minimal Style
    ============================================ */
 .logo-line {
   display: none !important;
 }
 
+/* Hide site title on all pages - it's redundant with sidebar */
+.site-title,
+.site-title a,
+.brand {
+  display: none !important;
+}
+
+/* Alternative: If you want to keep it but make it minimal
 .site-title {
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%) !important;
-  color: #fff !important;
+  background: transparent !important;
+  color: var(--text-primary) !important;
   border: none !important;
-  padding: 10px 20px !important;
+  padding: 0 !important;
   margin: 0 !important;
-  border-radius: 6px !important;
   font-weight: 600 !important;
+  font-size: 1.2em !important;
   letter-spacing: 0.5px !important;
-  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3) !important;
-  transition: all 0.3s ease !important;
+  box-shadow: none !important;
+  transition: color 0.3s ease !important;
 }
 
 .site-title:hover {
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4) !important;
-  transform: translateY(-1px) !important;
+  color: var(--primary-color) !important;
 }
+*/
 
 .brand {
   background: transparent !important;
@@ -163,54 +171,85 @@ header.header {
 }
 
 /* ============================================
-   TABLE OF CONTENTS - Simple & Clean
+   TABLE OF CONTENTS - Clear Hierarchy
    ============================================ */
 .post-toc {
-  font-size: 0.9em !important;
+  font-size: 0.88em !important;
 }
 
 .post-toc ol {
   padding-left: 0 !important;
   list-style: none !important;
+  margin: 0 !important;
 }
 
+/* Level 1 items (h2) */
 .post-toc .nav-item {
-  line-height: 1.8 !important;
+  line-height: 1.7 !important;
+  margin-bottom: 6px !important;
 }
 
+/* Level 2 items (h3) - nested */
 .post-toc .nav-item .nav-item {
-  padding-left: 15px !important;
+  padding-left: 20px !important;
+  margin-top: 4px !important;
+  margin-bottom: 4px !important;
+  font-size: 0.95em !important;
+}
+
+/* Level 3 items (h4) - further nested */
+.post-toc .nav-item .nav-item .nav-item {
+  padding-left: 35px !important;
+  font-size: 0.9em !important;
 }
 
 .post-toc .nav-link {
   color: var(--text-secondary) !important;
-  padding: 4px 8px !important;
+  padding: 5px 10px 5px 8px !important;
   display: block !important;
   transition: all 0.2s ease !important;
   text-decoration: none !important;
   border: none !important;
   border-left: 2px solid transparent !important;
+  border-radius: 0 4px 4px 0 !important;
 }
 
 .post-toc .nav-link:hover {
   color: var(--primary-color) !important;
   border-left-color: var(--primary-color) !important;
-  background: rgba(102, 126, 234, 0.05) !important;
+  background: rgba(102, 126, 234, 0.06) !important;
 }
 
 .post-toc .active > .nav-link,
 .post-toc .nav-link.active {
   color: var(--primary-color) !important;
   border-left-color: var(--accent-color) !important;
-  background: rgba(102, 126, 234, 0.08) !important;
+  background: rgba(102, 126, 234, 0.1) !important;
   font-weight: 500 !important;
 }
 
-/* TOC Number - Simple style */
+/* TOC Number - Only show for level 1 (h2) */
 .post-toc-content .nav-number {
   color: var(--primary-color) !important;
   font-weight: 600 !important;
   margin-right: 6px !important;
+  font-size: 0.9em !important;
+}
+
+/* Hide numbers for nested items (h3, h4) */
+.post-toc .nav-item .nav-item .nav-number,
+.post-toc .nav-item .nav-item .nav-item .nav-number {
+  display: none !important;
+}
+
+/* TOC Title */
+.post-toc-title {
+  font-weight: 600 !important;
+  color: var(--text-primary) !important;
+  font-size: 0.95em !important;
+  margin-bottom: 12px !important;
+  padding-bottom: 8px !important;
+  border-bottom: 1px solid var(--border-light) !important;
 }
 
 /* ============================================

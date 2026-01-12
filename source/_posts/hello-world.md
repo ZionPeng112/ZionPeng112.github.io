@@ -22,7 +22,7 @@ categories:
 </style>
 
 <div class="welcome-banner">
-<strong>👋 Welcome!</strong> I'm <strong>Zion Peng</strong>, a researcher passionate about implementing effective, high-reliability machine learning methods to address real-world problems. This is my personal academic homepage where I share research updates, technical notes, and professional growth.
+<strong>Welcome!</strong> I'm <strong>Zion Peng</strong>, a researcher passionate about implementing effective, high-reliability machine learning methods to address real-world problems. This is my personal academic homepage where I share research updates, technical notes, and professional growth.
 </div>
 
 <!-- more -->

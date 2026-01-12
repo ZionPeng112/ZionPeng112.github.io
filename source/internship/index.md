@@ -1,6 +1,7 @@
 ---
-title: Internship
+title: Professional Experience
 date: 2025-01-01 00:00:00
+toc: false
 ---
 
 <style>
@@ -99,7 +100,6 @@ date: 2025-01-01 00:00:00
 </style>
 
 <div class="internship-header">
-  <h2>💼 Professional Experience</h2>
   <p>My journey in data science, AI development, and technology consulting across leading organizations.</p>
 </div>
 
