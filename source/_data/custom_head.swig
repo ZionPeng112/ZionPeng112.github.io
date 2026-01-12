@@ -256,7 +256,7 @@ body.sidebar-open .sidebar-overlay {
   display: none !important;
 }
 
-/* Ensure sidebar panel container is visible */
+/* Ensure sidebar panel container and content is visible */
 .sidebar-panel-container {
   display: block !important;
   visibility: visible !important;
@@ -265,6 +265,24 @@ body.sidebar-open .sidebar-overlay {
 .sidebar-panel {
   display: block !important;
   visibility: visible !important;
+}
+
+/* Force show site-overview content */
+.site-overview-wrap {
+  display: flex !important;
+  visibility: visible !important;
+  height: auto !important;
+  opacity: 1 !important;
+  overflow: visible !important;
+  pointer-events: auto !important;
+  animation: none !important;
+}
+
+.site-overview-wrap.sidebar-panel {
+  height: auto !important;
+  opacity: 1 !important;
+  overflow: visible !important;
+  pointer-events: auto !important;
 }
 
 /* ============================================
