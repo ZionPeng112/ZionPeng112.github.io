@@ -225,26 +225,77 @@ header.header {
 }
 
 /* ============================================
-   TABLE OF CONTENTS - HIDDEN
+   TABLE OF CONTENTS - HIDDEN (Keep sidebar overview visible)
    ============================================ */
 .post-toc-wrap,
 .post-toc,
-.sidebar-panel-container,
-.sidebar-nav,
-.sidebar-nav-toc,
-.sidebar-toggle,
-#sidebar-toc-toggle,
 .toc,
 .toc-wrap,
-.sidebar-panel {
+.post-toc-title,
+.toc-title,
+.sidebar-nav {
   display: none !important;
 }
 
-/* Hide "Table of Contents" title text */
-.sidebar-inner .sidebar-nav,
-.post-toc-title,
-.toc-title {
-  display: none !important;
+/* ============================================
+   SIDEBAR - Default Hidden, Click to Open
+   ============================================ */
+/* Hide sidebar by default */
+.sidebar {
+  transform: translateX(-100%) !important;
+  visibility: hidden !important;
+}
+
+/* Show sidebar when active */
+.sidebar-active .sidebar {
+  transform: translateX(0) !important;
+  visibility: visible !important;
+}
+
+/* Style the toggle button */
+.sidebar-toggle {
+  display: block !important;
+  position: fixed !important;
+  left: 20px !important;
+  bottom: 45px !important;
+  width: 40px !important;
+  height: 40px !important;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%) !important;
+  border-radius: 50% !important;
+  cursor: pointer !important;
+  z-index: 9999 !important;
+  box-shadow: 0 2px 10px rgba(102, 126, 234, 0.4) !important;
+  transition: all 0.3s ease !important;
+}
+
+.sidebar-toggle:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.5) !important;
+}
+
+.sidebar-toggle .toggle-line {
+  background: #fff !important;
+}
+
+/* Sidebar close button */
+.sidebar-toggle-close {
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+  width: 30px !important;
+  height: 30px !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  background: var(--bg-light) !important;
+  transition: all 0.3s ease !important;
+}
+
+.sidebar-toggle-close:hover {
+  background: var(--primary-color) !important;
+  color: #fff !important;
 }
 
 /* ============================================

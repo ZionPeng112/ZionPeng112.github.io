@@ -9,7 +9,7 @@ menu:
 
 sidebar:
   position: left
-  display: post
+  display: hide
 
 avatar:
   url: /images/avatar.jpg

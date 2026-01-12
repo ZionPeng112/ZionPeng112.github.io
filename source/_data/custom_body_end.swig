@@ -1,68 +1,46 @@
 <script>
-// Fix Table of Contents click functionality
+// Sidebar toggle functionality
 (function() {
-  function fixTOC() {
-    // Fix TOC anchor links to work properly
-    const tocLinks = document.querySelectorAll('.toc-link, .post-toc a');
+  function initSidebar() {
+    const body = document.body;
+    const sidebar = document.querySelector('.sidebar');
+    const sidebarToggle = document.querySelector('.sidebar-toggle');
     
-    tocLinks.forEach(function(link) {
-      link.addEventListener('click', function(e) {
-        const href = this.getAttribute('href');
-        if (href && href.startsWith('#')) {
-          const targetId = href.substring(1);
-          const targetElement = document.getElementById(targetId) || 
-                               document.querySelector('[name="' + targetId + '"]');
-          
-          if (targetElement) {
-            e.preventDefault();
-            
-            // Remove any existing active states
-            tocLinks.forEach(l => l.classList.remove('active'));
-            this.classList.add('active');
-            
-            // Smooth scroll to target
-            const offset = 80; // Offset for fixed headers
-            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
-            
-            window.scrollTo({
-              top: targetPosition,
-              behavior: 'smooth'
-            });
-            
-            // Update URL without triggering scroll
-            if (history.pushState) {
-              history.pushState(null, null, href);
-            }
-          }
-        }
+    // Ensure sidebar is hidden by default on page load
+    body.classList.remove('sidebar-active');
+    
+    // Toggle sidebar on button click
+    if (sidebarToggle) {
+      sidebarToggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        body.classList.toggle('sidebar-active');
       });
+    }
+    
+    // Close sidebar when clicking outside
+    document.addEventListener('click', function(e) {
+      if (body.classList.contains('sidebar-active')) {
+        if (sidebar && !sidebar.contains(e.target) && 
+            sidebarToggle && !sidebarToggle.contains(e.target)) {
+          body.classList.remove('sidebar-active');
+        }
+      }
     });
     
-    // Fix TOC item clicks to toggle properly
-    const tocItems = document.querySelectorAll('.post-toc-item');
-    tocItems.forEach(function(item) {
-      const link = item.querySelector('a');
-      if (link) {
-        item.addEventListener('click', function(e) {
-          // Allow the link click to proceed
-          if (e.target === link || link.contains(e.target)) {
-            return;
-          }
-          // If clicking on the item itself, trigger the link
-          link.click();
-        });
+    // Close sidebar on ESC key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && body.classList.contains('sidebar-active')) {
+        body.classList.remove('sidebar-active');
       }
     });
   }
   
   // Run on DOM ready
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', fixTOC);
+    document.addEventListener('DOMContentLoaded', initSidebar);
   } else {
-    fixTOC();
+    initSidebar();
   }
-  
-  // Also run after a delay to catch dynamically loaded content
-  setTimeout(fixTOC, 500);
 })();
 </script>
