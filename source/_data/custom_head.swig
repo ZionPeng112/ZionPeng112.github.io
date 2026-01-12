@@ -99,7 +99,19 @@ header.header,
 /* ============================================
    SIDEBAR - Hidden by default, overlay on open
    ============================================ */
-/* Hide default sidebar - don't take up space */
+/* Make main content full width - sidebar doesn't take space */
+.main {
+  width: 100% !important;
+  padding-left: 0 !important;
+}
+
+.main-inner {
+  max-width: 900px !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+}
+
+/* Hide default sidebar completely */
 .sidebar {
   position: fixed !important;
   left: -320px !important;
@@ -111,6 +123,7 @@ header.header,
   transition: left 0.3s ease !important;
   box-shadow: none !important;
   overflow-y: auto !important;
+  padding-top: 0 !important;
 }
 
 /* Show sidebar when open */
@@ -119,7 +132,7 @@ body.sidebar-open .sidebar {
   box-shadow: 4px 0 20px rgba(0,0,0,0.15) !important;
 }
 
-/* Overlay background when sidebar is open */
+/* Overlay background */
 .sidebar-overlay {
   display: none;
   position: fixed;
@@ -135,9 +148,12 @@ body.sidebar-open .sidebar-overlay {
   display: block;
 }
 
+/* Sidebar inner content */
 .sidebar-inner {
   background: #fff !important;
-  padding: 25px 20px !important;
+  padding: 45px 20px 25px 20px !important;
+  display: block !important;
+  visibility: visible !important;
 }
 
 /* Hide NexT default toggle */
@@ -145,15 +161,15 @@ body.sidebar-open .sidebar-overlay {
   display: none !important;
 }
 
-/* Custom toggle button - small circle */
+/* Custom toggle button - menu icon */
 #profile-btn {
   position: fixed;
   left: 15px;
-  bottom: 15px;
+  bottom: 70px;
   width: 40px;
   height: 40px;
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
-  border-radius: 50%;
+  border-radius: 8px;
   cursor: pointer;
   z-index: 9998;
   box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
@@ -161,16 +177,29 @@ body.sidebar-open .sidebar-overlay {
   align-items: center;
   justify-content: center;
   border: none;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 #profile-btn:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5);
 }
 
-#profile-btn i {
-  color: #fff;
-  font-size: 18px;
+/* Menu icon (3 lines) */
+#profile-btn .menu-icon {
+  width: 18px;
+  height: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#profile-btn .menu-icon span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  border-radius: 1px;
 }
 
 /* Close button inside sidebar */
@@ -189,6 +218,8 @@ body.sidebar-open .sidebar-overlay {
   justify-content: center;
   transition: background 0.2s ease;
   z-index: 10001;
+  font-size: 14px;
+  color: var(--text-secondary);
 }
 
 #sidebar-close:hover {
@@ -207,6 +238,24 @@ body.sidebar-open .sidebar-overlay {
 .sidebar-nav,
 #table-of-contents {
   display: none !important;
+}
+
+/* ============================================
+   ENSURE SIDEBAR CONTENT IS VISIBLE
+   ============================================ */
+.site-author {
+  display: block !important;
+  visibility: visible !important;
+}
+
+.site-overview {
+  display: block !important;
+  visibility: visible !important;
+}
+
+.links-of-author {
+  display: block !important;
+  visibility: visible !important;
 }
 
 /* ============================================

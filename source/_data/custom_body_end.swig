@@ -5,20 +5,26 @@
     var sidebar = document.querySelector('.sidebar');
     var sidebarInner = document.querySelector('.sidebar-inner');
     
+    if (!sidebar) return;
+    
     // Create overlay
     var overlay = document.createElement('div');
     overlay.className = 'sidebar-overlay';
     document.body.appendChild(overlay);
     
-    // Create profile button (small circle)
+    // Create profile button with menu icon (3 lines)
     var profileBtn = document.createElement('button');
     profileBtn.id = 'profile-btn';
-    profileBtn.innerHTML = '<i class="fa fa-user"></i>';
+    profileBtn.innerHTML = '<div class="menu-icon"><span></span><span></span><span></span></div>';
     profileBtn.setAttribute('aria-label', 'Open profile');
     document.body.appendChild(profileBtn);
     
     // Create close button inside sidebar
     if (sidebarInner) {
+      // Remove existing close button if any
+      var existingClose = document.getElementById('sidebar-close');
+      if (existingClose) existingClose.remove();
+      
       var closeBtn = document.createElement('button');
       closeBtn.id = 'sidebar-close';
       closeBtn.innerHTML = '✕';
@@ -26,18 +32,26 @@
       sidebarInner.style.position = 'relative';
       sidebarInner.insertBefore(closeBtn, sidebarInner.firstChild);
       
-      closeBtn.addEventListener('click', function() {
+      closeBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
         body.classList.remove('sidebar-open');
       });
     }
     
-    // Add Research Interests box
+    // Add Research Interests box to site-overview
     var siteOverview = document.querySelector('.site-overview');
     if (siteOverview && !document.querySelector('.research-box')) {
       var researchBox = document.createElement('div');
       researchBox.className = 'research-box';
       researchBox.innerHTML = '<strong>Research Interests</strong><span>Machine Learning · Data Mining · AI Security</span>';
       siteOverview.appendChild(researchBox);
+    }
+    
+    // Ensure sidebar content is visible
+    var siteAuthor = document.querySelector('.site-author');
+    if (siteAuthor) {
+      siteAuthor.style.display = 'block';
+      siteAuthor.style.visibility = 'visible';
     }
     
     // Toggle sidebar
