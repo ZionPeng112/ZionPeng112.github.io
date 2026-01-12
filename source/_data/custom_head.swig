@@ -366,19 +366,40 @@ body.sidebar-open .sidebar-overlay {
   padding-top: 15px !important;
   border-top: 1px solid var(--border-light) !important;
   text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  gap: 15px !important;
+  flex-wrap: wrap !important;
+}
+
+.links-of-author-item {
+  display: inline-block !important;
 }
 
 .links-of-author a {
-  color: var(--primary-color) !important;
-  margin: 0 12px !important;
-  transition: color 0.2s ease !important;
+  color: #fff !important;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%) !important;
+  padding: 8px 14px !important;
+  border-radius: 20px !important;
+  transition: all 0.3s ease !important;
   text-decoration: none !important;
   border: none !important;
-  font-size: 1.2em !important;
+  font-size: 0.85em !important;
+  font-weight: 500 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  box-shadow: 0 2px 6px rgba(102, 126, 234, 0.3) !important;
 }
 
 .links-of-author a:hover {
-  color: var(--accent-color) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4) !important;
+}
+
+.links-of-author a i {
+  font-size: 1em !important;
 }
 
 /* ============================================

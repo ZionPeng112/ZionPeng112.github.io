@@ -41,13 +41,13 @@
       });
     }
     
-    // Add Research Interests box to site-overview
-    var siteOverview = document.querySelector('.site-overview');
-    if (siteOverview && !document.querySelector('.research-box')) {
+    // Add Research Interests box to site-overview-wrap
+    var siteOverviewWrap = document.querySelector('.site-overview-wrap');
+    if (siteOverviewWrap && !document.querySelector('.research-box')) {
       var researchBox = document.createElement('div');
       researchBox.className = 'research-box';
       researchBox.innerHTML = '<strong>Research Interests</strong><span>Machine Learning · Data Mining · AI Security</span>';
-      siteOverview.appendChild(researchBox);
+      siteOverviewWrap.appendChild(researchBox);
     }
     
     // Ensure sidebar content is visible
