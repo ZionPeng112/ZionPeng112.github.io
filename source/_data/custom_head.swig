@@ -351,13 +351,29 @@ body.sidebar-open .sidebar-overlay {
   display: block;
   color: var(--text-primary);
   font-size: 0.9em;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
-.research-box span {
+.research-box ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.research-box li {
   color: var(--text-secondary);
   font-size: 0.85em;
-  line-height: 1.5;
+  line-height: 1.8;
+  padding-left: 16px;
+  position: relative;
+}
+
+.research-box li::before {
+  content: "•";
+  color: var(--primary-color);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
 }
 
 /* Social Links */

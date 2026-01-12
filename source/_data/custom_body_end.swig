@@ -46,7 +46,7 @@
     if (siteOverviewWrap && !document.querySelector('.research-box')) {
       var researchBox = document.createElement('div');
       researchBox.className = 'research-box';
-      researchBox.innerHTML = '<strong>Research Interests</strong><span>Machine Learning · Data Mining · AI Security</span>';
+      researchBox.innerHTML = '<strong>Research Interests</strong><ul><li>Machine Learning</li><li>Data Mining</li><li>AI Security</li></ul>';
       siteOverviewWrap.appendChild(researchBox);
     }
     
