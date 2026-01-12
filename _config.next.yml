@@ -9,7 +9,10 @@ menu:
 
 sidebar:
   position: left
-  display: hide
+  display: always
+
+toc:
+  enable: false
 
 avatar:
   url: /images/avatar.jpg

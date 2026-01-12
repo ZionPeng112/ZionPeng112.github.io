@@ -240,50 +240,62 @@ header.header {
 /* ============================================
    SIDEBAR - Default Hidden, Click to Open
    ============================================ */
+/* Hide default NexT sidebar toggle */
+.sidebar-toggle {
+  display: none !important;
+}
+
 /* Hide sidebar by default */
 .sidebar {
   transform: translateX(-100%) !important;
   visibility: hidden !important;
+  transition: all 0.3s ease !important;
 }
 
 /* Show sidebar when active */
-.sidebar-active .sidebar {
+body.sidebar-open .sidebar {
   transform: translateX(0) !important;
   visibility: visible !important;
 }
 
-/* Style the toggle button */
-.sidebar-toggle {
-  display: block !important;
+/* Custom sidebar toggle button */
+#custom-sidebar-btn {
   position: fixed !important;
   left: 20px !important;
-  bottom: 45px !important;
-  width: 40px !important;
-  height: 40px !important;
+  bottom: 100px !important;
+  width: 44px !important;
+  height: 44px !important;
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%) !important;
   border-radius: 50% !important;
   cursor: pointer !important;
   z-index: 9999 !important;
   box-shadow: 0 2px 10px rgba(102, 126, 234, 0.4) !important;
   transition: all 0.3s ease !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: none !important;
+  padding: 0 !important;
 }
 
-.sidebar-toggle:hover {
+#custom-sidebar-btn:hover {
   transform: scale(1.1) !important;
   box-shadow: 0 4px 15px rgba(102, 126, 234, 0.5) !important;
 }
 
-.sidebar-toggle .toggle-line {
-  background: #fff !important;
+#custom-sidebar-btn svg {
+  width: 20px !important;
+  height: 20px !important;
+  fill: #fff !important;
 }
 
-/* Sidebar close button */
-.sidebar-toggle-close {
+/* Sidebar close button inside sidebar */
+#sidebar-close-btn {
   position: absolute !important;
-  top: 10px !important;
-  right: 10px !important;
-  width: 30px !important;
-  height: 30px !important;
+  top: 15px !important;
+  right: 15px !important;
+  width: 32px !important;
+  height: 32px !important;
   cursor: pointer !important;
   display: flex !important;
   align-items: center !important;
@@ -291,11 +303,30 @@ header.header {
   border-radius: 50% !important;
   background: var(--bg-light) !important;
   transition: all 0.3s ease !important;
+  border: none !important;
+  padding: 0 !important;
+  z-index: 10000 !important;
 }
 
-.sidebar-toggle-close:hover {
+#sidebar-close-btn:hover {
   background: var(--primary-color) !important;
-  color: #fff !important;
+}
+
+#sidebar-close-btn:hover svg {
+  fill: #fff !important;
+}
+
+#sidebar-close-btn svg {
+  width: 16px !important;
+  height: 16px !important;
+  fill: var(--text-secondary) !important;
+  transition: fill 0.3s ease !important;
+}
+
+/* Adjust back to top button position to avoid overlap */
+.back-to-top {
+  right: 20px !important;
+  bottom: 25px !important;
 }
 
 /* ============================================
