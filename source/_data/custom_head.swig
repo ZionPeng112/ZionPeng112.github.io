@@ -20,7 +20,6 @@
   overflow-wrap: break-word;
 }
 
-/* Disable justify alignment globally - causes ugly spacing */
 .post-body,
 .post-body p,
 .content,
@@ -36,75 +35,35 @@ p {
 .headband {
   display: none !important;
   height: 0 !important;
-  background: transparent !important;
 }
 
-.header-inner {
-  background: transparent !important;
-}
-
-.site-brand-container {
-  background: transparent !important;
-}
-
-header.header {
+.header-inner,
+.site-brand-container,
+header.header,
+.header {
   background: transparent !important;
   border: none !important;
 }
 
-.header {
-  background: transparent !important;
-  border-bottom: none !important;
-}
-
 /* ============================================
-   SITE TITLE - Hide or Minimal Style
+   SITE TITLE - Hide
    ============================================ */
-.logo-line {
-  display: none !important;
-}
-
-/* Hide site title on all pages - it's redundant with sidebar */
+.logo-line,
 .site-title,
 .site-title a,
 .brand {
   display: none !important;
 }
 
-/* Alternative: If you want to keep it but make it minimal
-.site-title {
-  background: transparent !important;
-  color: var(--text-primary) !important;
-  border: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  font-weight: 600 !important;
-  font-size: 1.2em !important;
-  letter-spacing: 0.5px !important;
-  box-shadow: none !important;
-  transition: color 0.3s ease !important;
-}
-
-.site-title:hover {
-  color: var(--primary-color) !important;
-}
-*/
-
 .brand {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
 }
-.brand:before,
-.brand:after {
-  display: none !important;
-}
+
 .site-meta {
   background: transparent !important;
   border: none !important;
-}
-.site-meta a {
-  background: transparent !important;
 }
 
 /* ============================================
@@ -144,10 +103,12 @@ header.header {
 }
 
 /* ============================================
-   SIDEBAR STYLING - Enhanced Profile
+   SIDEBAR STYLING - Always Visible
    ============================================ */
 .sidebar {
   background: #fff !important;
+  visibility: visible !important;
+  transform: none !important;
 }
 
 .sidebar-inner {
@@ -155,7 +116,30 @@ header.header {
   padding: 20px !important;
 }
 
-/* Author Section - Larger & More Prominent */
+/* Hide sidebar toggle button */
+.sidebar-toggle {
+  display: none !important;
+}
+
+/* ============================================
+   TABLE OF CONTENTS - COMPLETELY HIDDEN
+   ============================================ */
+.post-toc-wrap,
+.post-toc,
+.toc,
+.toc-wrap,
+.sidebar-panel-container,
+.sidebar-nav,
+#table-of-contents {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+/* ============================================
+   SIDEBAR PROFILE - Enhanced
+   ============================================ */
 .site-author-image {
   width: 100px !important;
   height: 100px !important;
@@ -164,7 +148,6 @@ header.header {
   margin-bottom: 15px !important;
 }
 
-/* Show author name */
 .site-author-name {
   display: block !important;
   color: var(--text-primary) !important;
@@ -173,29 +156,8 @@ header.header {
   margin-bottom: 8px !important;
 }
 
-/* Hide default site description */
 .site-description {
   display: none !important;
-}
-
-/* Research Interest - Custom Section */
-.site-overview {
-  display: block !important;
-  visibility: visible !important;
-}
-
-.site-overview::after {
-  content: "Research Interests: Machine Learning · Data Mining · AI Security";
-  display: block !important;
-  visibility: visible !important;
-  color: var(--text-secondary) !important;
-  font-size: 0.85em !important;
-  line-height: 1.5 !important;
-  margin-top: 12px !important;
-  padding: 10px 12px !important;
-  background: var(--bg-light) !important;
-  border-radius: 6px !important;
-  border-left: 3px solid var(--primary-color) !important;
 }
 
 /* Site State - Hide */
@@ -203,7 +165,11 @@ header.header {
   display: none !important;
 }
 
-/* Social Links - Prominent style */
+/* Research Interest Box */
+.site-overview {
+  display: block !important;
+}
+
 .links-of-author {
   margin-top: 15px !important;
   padding-top: 15px !important;
@@ -221,112 +187,6 @@ header.header {
 
 .links-of-author a:hover {
   color: var(--accent-color) !important;
-  transform: scale(1.1) !important;
-}
-
-/* ============================================
-   TABLE OF CONTENTS - HIDDEN (Keep sidebar overview visible)
-   ============================================ */
-.post-toc-wrap,
-.post-toc,
-.toc,
-.toc-wrap,
-.post-toc-title,
-.toc-title,
-.sidebar-nav {
-  display: none !important;
-}
-
-/* ============================================
-   SIDEBAR - Default Hidden, Click to Open
-   ============================================ */
-/* Hide default NexT sidebar toggle */
-.sidebar-toggle {
-  display: none !important;
-}
-
-/* Hide sidebar by default */
-.sidebar {
-  transform: translateX(-100%) !important;
-  visibility: hidden !important;
-  transition: all 0.3s ease !important;
-}
-
-/* Show sidebar when active */
-body.sidebar-open .sidebar {
-  transform: translateX(0) !important;
-  visibility: visible !important;
-}
-
-/* Custom sidebar toggle button */
-#custom-sidebar-btn {
-  position: fixed !important;
-  left: 20px !important;
-  bottom: 100px !important;
-  width: 44px !important;
-  height: 44px !important;
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%) !important;
-  border-radius: 50% !important;
-  cursor: pointer !important;
-  z-index: 9999 !important;
-  box-shadow: 0 2px 10px rgba(102, 126, 234, 0.4) !important;
-  transition: all 0.3s ease !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  border: none !important;
-  padding: 0 !important;
-}
-
-#custom-sidebar-btn:hover {
-  transform: scale(1.1) !important;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.5) !important;
-}
-
-#custom-sidebar-btn svg {
-  width: 20px !important;
-  height: 20px !important;
-  fill: #fff !important;
-}
-
-/* Sidebar close button inside sidebar */
-#sidebar-close-btn {
-  position: absolute !important;
-  top: 15px !important;
-  right: 15px !important;
-  width: 32px !important;
-  height: 32px !important;
-  cursor: pointer !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  border-radius: 50% !important;
-  background: var(--bg-light) !important;
-  transition: all 0.3s ease !important;
-  border: none !important;
-  padding: 0 !important;
-  z-index: 10000 !important;
-}
-
-#sidebar-close-btn:hover {
-  background: var(--primary-color) !important;
-}
-
-#sidebar-close-btn:hover svg {
-  fill: #fff !important;
-}
-
-#sidebar-close-btn svg {
-  width: 16px !important;
-  height: 16px !important;
-  fill: var(--text-secondary) !important;
-  transition: fill 0.3s ease !important;
-}
-
-/* Adjust back to top button position to avoid overlap */
-.back-to-top {
-  right: 20px !important;
-  bottom: 25px !important;
 }
 
 /* ============================================
@@ -369,7 +229,6 @@ body.sidebar-open .sidebar {
   color: var(--accent-color) !important;
 }
 
-/* Post meta categories */
 .post-category,
 .post-meta a {
   color: var(--primary-color) !important;
@@ -429,32 +288,8 @@ body.sidebar-open .sidebar {
 }
 
 /* ============================================
-   HOME PAGE IMAGE
+   MOBILE OPTIMIZATION
    ============================================ */
-.home-header-image {
-  float: right;
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  margin: 0 0 15px 20px;
-}
-
-@media (max-width: 768px) {
-  .home-header-image {
-    float: none;
-    width: 120px;
-    height: 120px;
-    margin: 0 auto 15px;
-    display: block;
-  }
-}
-
-/* ============================================
-   MOBILE OPTIMIZATION - Text & Layout
-   ============================================ */
-/* Allow word breaking for long words */
 body {
   word-wrap: break-word !important;
   overflow-wrap: break-word !important;
@@ -463,7 +298,6 @@ body {
   hyphens: auto !important;
 }
 
-/* Fix text alignment on mobile - left align instead of justify */
 @media (max-width: 768px) {
   .post-body,
   .post-body p,
@@ -474,10 +308,8 @@ body {
   .home-banner p {
     text-align: left !important;
     word-spacing: normal !important;
-    letter-spacing: normal !important;
   }
   
-  /* Reduce padding on mobile */
   .home-section {
     padding: 15px 18px !important;
   }
@@ -486,13 +318,11 @@ body {
     padding: 20px !important;
   }
   
-  /* Smaller font on mobile for better fit */
   .home-section li {
     font-size: 0.95em !important;
     line-height: 1.6 !important;
   }
   
-  /* Fix strong text not breaking weirdly */
   .home-section li strong {
     display: inline !important;
     white-space: normal !important;
@@ -506,7 +336,6 @@ body {
   display: none !important;
 }
 
-/* Back to top button */
 .back-to-top {
   background: var(--primary-color) !important;
   color: #fff !important;
@@ -516,14 +345,13 @@ body {
   background: var(--accent-color) !important;
 }
 
-/* Selection color */
 ::selection {
   background: var(--primary-color) !important;
   color: #fff !important;
 }
 
 /* ============================================
-   READ MORE BUTTON - Compact & Clean
+   READ MORE BUTTON
    ============================================ */
 .post-button,
 .post-button a,
@@ -551,14 +379,12 @@ a.btn:hover,
   color: #fff !important;
 }
 
-/* Ensure text inside is white and visible */
 .post-button .btn,
 .post-button a {
   color: #fff !important;
   text-shadow: none !important;
 }
 
-/* Read More link styling */
 a[rel="more"] {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%) !important;
   color: #fff !important;
@@ -572,7 +398,7 @@ a[rel="more"] {
 }
 
 /* ============================================
-   PDF LINK - No Underline on Hover
+   PDF LINK
    ============================================ */
 .paper-link {
   text-decoration: none !important;
@@ -586,7 +412,9 @@ a[rel="more"] {
   border-bottom: none !important;
 }
 
-/* Scrollbar styling (webkit browsers) */
+/* ============================================
+   SCROLLBAR
+   ============================================ */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -605,3 +433,17 @@ a[rel="more"] {
   background: var(--accent-color);
 }
 </style>
+
+<!-- Research Interests Box -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var siteOverview = document.querySelector('.site-overview');
+  if (siteOverview && !document.querySelector('.research-interests')) {
+    var researchBox = document.createElement('div');
+    researchBox.className = 'research-interests';
+    researchBox.innerHTML = '<strong>Research Interests</strong><br>Machine Learning · Data Mining · AI Security';
+    researchBox.style.cssText = 'margin-top: 15px; padding: 12px; background: #f8f9fa; border-radius: 6px; border-left: 3px solid #667eea; font-size: 0.9em; color: #666; line-height: 1.6;';
+    siteOverview.appendChild(researchBox);
+  }
+});
+</script>
