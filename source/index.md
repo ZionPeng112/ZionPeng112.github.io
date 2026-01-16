@@ -78,7 +78,7 @@ toc: false
 
 .home-intro a:hover {
   color: #5a6fd6;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Navigation buttons */
